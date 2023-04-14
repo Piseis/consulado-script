@@ -10,12 +10,12 @@ from constants import *
 def play_notification():
     #playsound(os.path.join(current_path, 'sounds', 'notification.wav'))
     #os.system('termux-notification --title "Consulado" --content "Página para sacar cita activa"')
-    # notification.notify(
-    #     title="Hola",
-    #     message="Esta es una notificación de prueba.",
-    #     app_name="Termux",
-    #     app_icon=None
-    # ) 
+    notification.notify(
+        title="Hola",
+        message="Esta es una notificación de prueba.",
+        app_name="Termux",
+        app_icon=None
+    ) 
 
     audio.play_effect('Bell')
 
