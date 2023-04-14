@@ -28,8 +28,8 @@ def check_active_url():
             response = requests.head(URL_LINK, allow_redirects=True)
             redirected_url = response.url
             if redirected_url == URL_CONSULADO:
-                print('Consulta activa')
                 play_notification()
+                print('Consulta activa')
                 break
             else:
                 time.sleep(60)
