@@ -19,7 +19,7 @@ def play_notification():
     # ) 
 
     # audio.play_effect('Bell')
-    termux.Notification('Title', 'Content')
+    termux.Notification.notify('title', 'content')
 
 
 def check_active_url():
