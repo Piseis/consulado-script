@@ -1,8 +1,9 @@
 import time
 import requests
-import os
+# import os
 #from playsound import playsound
-from plyer import notification, audio
+# from plyer import notification, audio
+import termux
 
 from constants import *
 
@@ -10,14 +11,15 @@ from constants import *
 def play_notification():
     #playsound(os.path.join(current_path, 'sounds', 'notification.wav'))
     #os.system('termux-notification --title "Consulado" --content "Página para sacar cita activa"')
-    notification.notify(
-        title="Hola",
-        message="Esta es una notificación de prueba.",
-        app_name="Termux",
-        app_icon=None
-    ) 
+    # notification.notify(
+    #     title="Hola",
+    #     message="Esta es una notificación de prueba.",
+    #     app_name="Termux",
+    #     app_icon=None
+    # ) 
 
-    audio.play_effect('Bell')
+    # audio.play_effect('Bell')
+    termux.Notification('Title', 'Content')
 
 
 def check_active_url():
